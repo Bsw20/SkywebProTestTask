@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		30E02E9025F1515600571ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02E8F25F1515600571ED4 /* AppDelegate.swift */; };
-		30E02E9225F1515600571ED4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02E9125F1515600571ED4 /* SceneDelegate.swift */; };
-		30E02E9425F1515600571ED4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02E9325F1515600571ED4 /* ViewController.swift */; };
-		30E02E9725F1515600571ED4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E02E9525F1515600571ED4 /* Main.storyboard */; };
 		30E02E9925F1515900571ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E02E9825F1515900571ED4 /* Assets.xcassets */; };
 		30E02E9C25F1515900571ED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E02E9A25F1515900571ED4 /* LaunchScreen.storyboard */; };
+		30E02EA825F1534C00571ED4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02EA725F1534C00571ED4 /* MainViewController.swift */; };
+		30E02EB625F156CD00571ED4 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02EB525F156CD00571ED4 /* ImageCell.swift */; };
+		30E02EB925F1697600571ED4 /* ImageAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02EB825F1697600571ED4 /* ImageAPIResponse.swift */; };
+		30E02EC425F16C7B00571ED4 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02EC325F16C7B00571ED4 /* CustomError.swift */; };
+		30E02EC925F1731600571ED4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02EC825F1731600571ED4 /* NetworkService.swift */; };
+		30E02ECF25F176E300571ED4 /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02ECE25F176E300571ED4 /* UIApplication + Extension.swift */; };
+		30E02ED325F17F3600571ED4 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E02ED225F17F3600571ED4 /* WebImageView.swift */; };
+		947A5FD52A6BAC799BE6BB0C /* Pods_SkywebProTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AC30617B34BBE83C419860 /* Pods_SkywebProTestTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2452C33409076F32C94A2319 /* Pods-SkywebProTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkywebProTestTask.release.xcconfig"; path = "Target Support Files/Pods-SkywebProTestTask/Pods-SkywebProTestTask.release.xcconfig"; sourceTree = "<group>"; };
 		30E02E8C25F1515600571ED4 /* SkywebProTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkywebProTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E02E8F25F1515600571ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30E02E9125F1515600571ED4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30E02E9325F1515600571ED4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30E02E9625F1515600571ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30E02E9825F1515900571ED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30E02E9B25F1515900571ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30E02E9D25F1515900571ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E02EA725F1534C00571ED4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		30E02EB525F156CD00571ED4 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		30E02EB825F1697600571ED4 /* ImageAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIResponse.swift; sourceTree = "<group>"; };
+		30E02EC325F16C7B00571ED4 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		30E02EC825F1731600571ED4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		30E02ECE25F176E300571ED4 /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
+		30E02ED225F17F3600571ED4 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
+		97AC30617B34BBE83C419860 /* Pods_SkywebProTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkywebProTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010BC0D50B8BB1B710C5341 /* Pods-SkywebProTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkywebProTestTask.debug.xcconfig"; path = "Target Support Files/Pods-SkywebProTestTask/Pods-SkywebProTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947A5FD52A6BAC799BE6BB0C /* Pods_SkywebProTestTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				30E02E8E25F1515600571ED4 /* SkywebProTestTask */,
 				30E02E8D25F1515600571ED4 /* Products */,
+				3B9F322CA40F2187E0CEEB44 /* Pods */,
+				F7D3A9DFF2A8D7B38B5F2E18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +72,83 @@
 			isa = PBXGroup;
 			children = (
 				30E02E8F25F1515600571ED4 /* AppDelegate.swift */,
-				30E02E9125F1515600571ED4 /* SceneDelegate.swift */,
-				30E02E9325F1515600571ED4 /* ViewController.swift */,
-				30E02E9525F1515600571ED4 /* Main.storyboard */,
+				30E02EB325F1568E00571ED4 /* Models */,
+				30E02EB225F1568800571ED4 /* Views */,
+				30E02EB125F1567800571ED4 /* Controllers */,
+				30E02EC725F172F900571ED4 /* Networking */,
+				30E02EC225F16C6800571ED4 /* Helpers */,
+				30E02ECD25F176B500571ED4 /* Extensions */,
 				30E02E9825F1515900571ED4 /* Assets.xcassets */,
 				30E02E9A25F1515900571ED4 /* LaunchScreen.storyboard */,
 				30E02E9D25F1515900571ED4 /* Info.plist */,
 			);
 			path = SkywebProTestTask;
+			sourceTree = "<group>";
+		};
+		30E02EB125F1567800571ED4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30E02EA725F1534C00571ED4 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30E02EB225F1568800571ED4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30E02EB525F156CD00571ED4 /* ImageCell.swift */,
+				30E02ED225F17F3600571ED4 /* WebImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30E02EB325F1568E00571ED4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30E02EB825F1697600571ED4 /* ImageAPIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30E02EC225F16C6800571ED4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				30E02EC325F16C7B00571ED4 /* CustomError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		30E02EC725F172F900571ED4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				30E02EC825F1731600571ED4 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		30E02ECD25F176B500571ED4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30E02ECE25F176E300571ED4 /* UIApplication + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B9F322CA40F2187E0CEEB44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D010BC0D50B8BB1B710C5341 /* Pods-SkywebProTestTask.debug.xcconfig */,
+				2452C33409076F32C94A2319 /* Pods-SkywebProTestTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7D3A9DFF2A8D7B38B5F2E18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97AC30617B34BBE83C419860 /* Pods_SkywebProTestTask.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30E02EA025F1515900571ED4 /* Build configuration list for PBXNativeTarget "SkywebProTestTask" */;
 			buildPhases = (
+				71920950457E59772D357EC5 /* [CP] Check Pods Manifest.lock */,
 				30E02E8825F1515600571ED4 /* Sources */,
 				30E02E8925F1515600571ED4 /* Frameworks */,
 				30E02E8A25F1515600571ED4 /* Resources */,
+				9686303AD97E32C262848A82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +212,72 @@
 			files = (
 				30E02E9C25F1515900571ED4 /* LaunchScreen.storyboard in Resources */,
 				30E02E9925F1515900571ED4 /* Assets.xcassets in Resources */,
-				30E02E9725F1515600571ED4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71920950457E59772D357EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkywebProTestTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9686303AD97E32C262848A82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkywebProTestTask/Pods-SkywebProTestTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkywebProTestTask/Pods-SkywebProTestTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkywebProTestTask/Pods-SkywebProTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30E02E8825F1515600571ED4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E02E9425F1515600571ED4 /* ViewController.swift in Sources */,
+				30E02ECF25F176E300571ED4 /* UIApplication + Extension.swift in Sources */,
+				30E02ED325F17F3600571ED4 /* WebImageView.swift in Sources */,
+				30E02EC925F1731600571ED4 /* NetworkService.swift in Sources */,
+				30E02EC425F16C7B00571ED4 /* CustomError.swift in Sources */,
+				30E02EA825F1534C00571ED4 /* MainViewController.swift in Sources */,
+				30E02EB925F1697600571ED4 /* ImageAPIResponse.swift in Sources */,
 				30E02E9025F1515600571ED4 /* AppDelegate.swift in Sources */,
-				30E02E9225F1515600571ED4 /* SceneDelegate.swift in Sources */,
+				30E02EB625F156CD00571ED4 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		30E02E9525F1515600571ED4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30E02E9625F1515600571ED4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30E02E9A25F1515900571ED4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +407,14 @@
 		};
 		30E02EA125F1515900571ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D010BC0D50B8BB1B710C5341 /* Pods-SkywebProTestTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL28D5C2MP;
 				INFOPLIST_FILE = SkywebProTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +422,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bsw20.SkywebProTestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		30E02EA225F1515900571ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2452C33409076F32C94A2319 /* Pods-SkywebProTestTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL28D5C2MP;
 				INFOPLIST_FILE = SkywebProTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bsw20.SkywebProTestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

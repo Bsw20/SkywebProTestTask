@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import SnapKit
+import SwiftyBeaver
 
 class MainViewController: UIViewController {
     //MARK: - Variables
@@ -24,6 +25,7 @@ class MainViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
+    
     
     //MARK: - VC Lifecycle
     override func viewDidLoad() {
@@ -65,21 +67,25 @@ class MainViewController: UIViewController {
     }
     
     private func addImages() {
-        service.getImages {[weak self] (result) in
-            switch result {
-            
-            case .success(let data):
-                switch ImageAPIResponse.parseToModel(data: data) {
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.service.getImages {[weak self] (result) in
+                switch result {
                 
-                case .success(let model):
-                    self?.model.addImages(images: model.images)
-                    self?.collectionView.reloadData()
+                case .success(let data):
+                    switch ImageAPIResponse.parseToModel(data: data) {
+                    
+                    case .success(let model):
+                        self?.model.addImages(images: model.images)
+                        DispatchQueue.main.async {
+                            self?.collectionView.reloadData()
+                        }
 
+                    case .failure(let error):
+                        UIApplication.showAlert(title: "Ошибка!", message: error.localizedDescription)
+                    }
                 case .failure(let error):
                     UIApplication.showAlert(title: "Ошибка!", message: error.localizedDescription)
                 }
-            case .failure(let error):
-                UIApplication.showAlert(title: "Ошибка!", message: error.localizedDescription)
             }
         }
     }
@@ -98,6 +104,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.configure(model: model.images[indexPath.item])
         return cell
     }
+    
 }
 
 //MARK: - UICollectionViewDelegateFlowLayout
@@ -115,7 +122,8 @@ extension MainViewController {
     private func setupConstraints() {
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view.safeAreaLayoutGuide.snp.edges)
+            make.top.left.right.equalTo(view.safeAreaLayoutGuide)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(10)
         }
     }
 }

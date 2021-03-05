@@ -19,7 +19,6 @@ struct NetworkService: ImageDataFetcher {
     //MARK: - Variables
     private var apiKey = "BUepB7b27nzyDsio-jocI_Yiwa3HmyBje3_NuszzuAY"
     public static let shared = NetworkService()
-    
     func getImages(completion:@escaping (Result<Any, Error>) -> Void) {
         guard let url = URL(string: "https://api.unsplash.com/search/photos?page=\(Int.random(in: 1..<50))&query=birthday&client_id=\(apiKey)") else {
             let error = CustomError.incorrectUrl

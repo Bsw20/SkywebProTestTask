@@ -53,15 +53,20 @@ class ImageCell: UICollectionViewCell {
         }
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if scrollView.contentSize.height > scrollView.frame.height {
+            scrollView.isUserInteractionEnabled = true
+        } else {
+            scrollView.isUserInteractionEnabled = false
+        }
+    }
     
     //MARK: - Funcs
     public func configure(model: ImageCellViewModel) {
         imageView.set(imageURL: model.url)
         setupConstraints(model: model)
     }
-    
-
-    
 }
 
 //MARK: - Constraints
@@ -76,6 +81,7 @@ extension ImageCell {
         imageView.snp.makeConstraints { (make) in
             make.top.left.equalToSuperview()
             make.width.equalTo(snp.width)
+            //Высчитываем отношение высоты к ширине; ширина фиксированная(равна ширине superview) => легко находим высоту
             let ratio = CGFloat(model.height) / CGFloat(model.width)
             make.height.equalTo(snp.width).multipliedBy(ratio)
             make.bottom.equalToSuperview()
